@@ -10,8 +10,7 @@ function agregarAmigo() {
     //valida el input
     if (amigosList === "") {
         alert("Por favor, inserte un nombre");
-        return;
-    }
+        return;    }
 
     //verifica si el amigo ya esta en la array
     if (listaAmigos.includes(amigosList)) {
@@ -22,17 +21,31 @@ function agregarAmigo() {
     //actualiza la array de amigos
     listaAmigos.push(amigosList);
 
-    //llama a la funcion limpia el input
+    //limpia el input
     limpiarInput();
-           
+    
+    //actualiza la array en la pagina
+    actualizarListaAmigos();
+    
 }
-
 //funcion limpia el input
  function limpiarInput() {
         document.querySelector("#amigo").value = "";
     }
 
+//actualiza y muestra la array en la pagina
+function actualizarListaAmigos() {
+    let = listaActualizada = document.getElementById("listaAmigos");
+    listaActualizada.innerHTML = "";
 
+    for (let i = 0; i < listaAmigos.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = listaAmigos[i];
+        listaActualizada.appendChild(li);
+        }
+
+    }
+   
 
 
 
