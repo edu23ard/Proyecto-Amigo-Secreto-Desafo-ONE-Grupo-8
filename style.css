@@ -160,3 +160,16 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* Pie de página */
+.footer-banner {
+    flex: 10%;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: end;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    color: var(--color-button-hover);
+    font-size: 18px;
+    
+}

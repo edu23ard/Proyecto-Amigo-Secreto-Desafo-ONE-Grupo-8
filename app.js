@@ -56,8 +56,8 @@ function actualizarListaAmigos() {
         }
 
         let generaAmigoAleatorio = Math.floor(Math.random() * listaAmigos.length);
-        
-        resultado.innerHTML = `Tu amigo secreto es: ${listaAmigos[generaAmigoAleatorio]}`;
+        let amigoSorteado = listaAmigos[generaAmigoAleatorio];
+        resultado.innerHTML = `Tu amigo secreto es: ${amigoSorteado}`;
     }
 
 
